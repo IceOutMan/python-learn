@@ -1,4 +1,3 @@
-import pandas as pd
 from matplotlib import pyplot as plt
 if __name__ == '__main__':
     # vprofile_data = pd.read_csv("data/vprofile-2021-11.csv",index_col=['createdAt'],parse_dates=True)
