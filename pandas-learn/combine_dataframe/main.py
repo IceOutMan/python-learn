@@ -28,5 +28,17 @@ def re_name():
 
 
 if __name__ == '__main__':
-    # create_new_columns()
-    re_name()
+    # user_chinese_data = pd.read_csv('user_chinese.csv')
+    # print(user_chinese_data)
+    # user_english_data = pd.read_csv('user_english.csv')
+    # print(user_english_data)
+    #
+    # concat_data = pd.concat([user_chinese_data, user_english_data],axis=0)
+    # print(concat_data)
+    user_chinese_data = pd.read_csv('user_chinese.csv')
+    order_chinese_data = pd.read_csv('order_chinese.csv')
+    merge_data = pd.merge(user_chinese_data,order_chinese_data,how='left',on="user_id")
+    print(merge_data)
+
+
+
