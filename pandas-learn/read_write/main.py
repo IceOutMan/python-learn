@@ -1,8 +1,13 @@
 
 import pandas as pd
 if __name__ == '__main__':
-    data = pd.read_csv("titanic.csv")
-    print(data.info())
-    print(data.dtypes)
-    # data.to_excel("titanic.xlsx",sheet_name="passangers",index=False)
-    data.to_excel("titanic.xlsx",sheet_name="passanger_two",index=False)
+    df = pd.DataFrame(
+        {
+            'age': [11, 12, 13],
+            'name': ['zs', 'ls', 'ww'],
+            'revenue': [111, 222, 333]
+        },
+        index=['A', 'B', 'C']
+    )
+
+    print(df.ge(12))
