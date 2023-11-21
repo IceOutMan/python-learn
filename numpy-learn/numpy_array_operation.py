@@ -31,5 +31,5 @@
     # print np.divide(x1, x2)
     # print np.power(x1, x2)
     # print np.remainder(x1, x2)
-#
-#
+
+    if __name__ == '__main__':
